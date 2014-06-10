@@ -1,0 +1,545 @@
+html,body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,div,a,fieldset { 
+	margin: 0; padding: 0; 
+	list-style-type: none; 
+	text-decoration: none;
+	border: none; 
+}
+
+/*----------------------
+
+Table of Contents
+
+----------------------*/
+
+/*
+Blog
+Checkout
+Footer
+Header
+Home Page
+Interviews
+Main Template
+Main Navigation
+Mobile Views
+Recipes
+Search
+Shop
+Side Navigation
+Social Media
+*/
+
+
+/*----------------------
+
+Main Template
+
+----------------------*/
+
+body,html { background: #82B3F1; }
+#wrapper { 
+	width: 100%;
+	margin: 0 auto; padding: 0;
+	background: url(/dynn/img/striped-pattern50.png); 
+	/*background: #DADADA;*/
+}
+#container {
+	width: 934px;
+	margin: 0 auto; padding: 0 33px;
+	background: #fff;
+}
+#container > div { 
+	width: 870px;
+	margin: 0; padding: 10px 0 0;
+}
+
+#content {
+	width: 630px;
+	margin: 0 0 25px 45px;
+	display: inline-block;
+}
+#content select { 
+	width: 200px;
+	padding: 5px;
+}
+
+/*----------------------
+
+Header
+
+----------------------*/
+
+.banner {
+	width: 934px; height: 215px;
+	margin: 0 auto;
+	position: relative;
+	background: url(/dynn/img/dynn_header2.png) no-repeat;
+}
+.banner img { 
+	position: absolute;
+	right: 33px; bottom: 24px;
+}
+#wrapper > header {
+	height: 276px;
+	background: rgb(140,70,0);
+	position: relative;
+}
+
+/*Main Navigation*/
+#wrapper > header > footer > nav > a {
+	padding: 20px 28px;
+	display: block;
+	float: right;
+	color: #000;
+	font-family: 'Serif';
+	font-size: 12pt;
+	letter-spacing: 2px;
+	-webkit-transition: color .5s;
+	   -moz-transition: color .5s;
+	       -transition: color .5s;
+}
+#wrapper > header > footer > nav > a:first-of-type { padding-right: 0; }
+#wrapper > header > footer > nav > a:hover { color: gray; }
+#wrapper > header > footer {
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	background: #fff;
+}
+#wrapper > header footer > nav {
+	width: 867px; height: 60px;
+	margin: 0 auto;
+	position: relative;
+	border-bottom: 1px dashed #000;
+}
+.main { display: none; }
+
+/*----------------------
+
+Side Nav
+
+----------------------*/
+
+#side-nav {
+	padding: 0 0 38px 0;
+	display: inline-block;
+	vertical-align: top;
+}
+#side-nav > ul > li a {
+	margin: 10px 0;
+	display: block;
+	color: #000;
+	font-family: 'Serif';
+	letter-spacing: 2px;
+}
+#side-nav > ul > ul a {
+	color: gray;
+	font-size: 11pt;
+	font-family: 'Serif';
+	font-style: italic;
+	-webkit-transition: color .5s;
+	   -moz-transition: color .5s;
+	       -transition: color .5s;
+}
+#side-nav > ul > ul a:hover { color: #000; }
+
+/*----------------------
+
+Home Page
+
+----------------------*/
+.home-page { 
+	width: 608px;
+	margin: 15px 0 0 25px; 
+}
+.home-page div.header { 
+	width: 608px;
+	padding: 1px 0 30px 0;
+	background: url(/dynn/img/home_lander.jpg) no-repeat;
+	border-bottom: 1px dashed #000; 
+}
+.home-page div.header a {
+	margin: 120px 0 0 25px;
+	display: block;
+	color: #0c4287;
+	font-family: 'Muli', serif;
+	font-size: 33pt;
+}
+.home-page div.header a:hover { color: #82B3F1; }
+.home-page div.header p {
+	width: 567px;
+	margin: 0 0 0 25px;
+	color: #000;
+}
+.home-page div.footer {
+	width: 290px; height: 156px;
+	margin: 15px 0 0 0; padding: 1px 0 0 0;
+	display: inline-block;
+	vertical-align: top;
+}
+.blog_lander { margin-right: 22px !important; }
+.home-page div.footer a {
+	margin: 0 0 0 25px;
+	display: block;
+	color: #0c4287;
+	font-family: 'Muli', serif;
+	font-size: 28pt;
+}
+.home-page div.footer a:hover { color: #82B3F1; }
+.home-page div.footer p { margin: 0 0 0 25px; color: #000; }
+
+/*----------------------
+
+Blog
+
+----------------------*/
+
+div.blog_post {
+	width: 652px;
+	padding: 10px 0;
+	border-bottom: 1px dashed #000;
+}
+div.blog_post:last-of-type { border-bottom: none; }
+div.blog_post a {
+	color: #0c4287;
+	font-family: 'Muli', 'sans-serif';
+	font-size: 24pt;
+}
+div.blog_post a:hover { color: #82B3F1 ; }
+div.blog_post a + p {
+	color: gray;
+	font-family: 'Arial', 'sans-serif';
+	font-size: 12pt;
+}
+div.blog_preview { min-height: 160px; }
+div.blog_preview img {
+	margin: 10px 0 0; padding: 0 10px 0 0;
+}
+div.blog_preview img + p {
+	width: 487px;
+	margin: 10px 0 0; padding: 0 0 10px 10px; 
+	display: inline-block;
+	vertical-align: top;
+}
+
+/*----------------------
+
+Mobile Views
+
+----------------------*/
+
+
+@media screen and (max-width: 1280px) {
+	#wrapper {
+		background: #fff;
+	}
+}
+
+/*Tablet Views*/
+@media screen and (max-width: 1023px) {
+	.banner { width: 650px; background: none; }
+	.banner img { right: 0px; }
+	#container { 
+		width: 647px; 
+		padding: 0 !important; 
+	}
+	#container > div {
+		width: 647px;
+		margin: 0;
+	}
+	#content { width: 430px; margin: 0 0 25px 40px; }
+	
+	/*Navigation*/
+	#wrapper > header > footer > nav { width: 647px; }
+	#wrapper > header > footer > nav a { padding: 20px 15px; }
+	
+	/*Blog*/
+	div.blog_post { width: 448px !important; }
+	div.blog_preview img {
+		padding: 0 20px 10px 0 !important;
+		float: left !important;
+	}
+	div.blog_preview img + p {
+		width: auto !important;
+		padding: 0 !important;
+		display: block !important;
+	}
+	/*Checkout*/
+	#checkout { margin: 0 0 0 20px !important; }
+	
+	/*Footer*/
+	#wrapper + footer,
+	#wrapper + footer div { width: 647px !important; }
+	#wrapper + footer div a { padding: 20px 23px !important; }
+	
+	/*Home Page*/
+	.home-page { 
+		width: 431px;
+		margin: 15px 0 0 0 !important;
+	}
+	.home-page div.header { width: 434px; background: url(/dynn/img/home_lander.jpg) no-repeat 0 -14px; }
+	.home-page div.header a { margin: 95px 0 0 0 25px; font-size: 29pt; }
+	.home-page div.header p { width: 400px; }
+	
+	.home-page div.footer { 
+		width: 400px; height: auto;
+		display: block;
+	}
+
+	/*Recipes Page*/	
+	div.recipes_lander { width: 434px !important; }
+	.recipes_page h1 { font-size: 20pt; }
+	.recipes_page img {
+		width: 40% !important;
+		padding: 0 10px 0 0 !important;
+		border-right: none !important;
+	}
+	.recipes_page ul { width: 250px; }
+	
+	/*Interviews Page*/
+	.interview-page > img { width: 100%; }
+	.interview-page p:nth-of-type(odd) { margin: 10px 0; }
+	
+	/*Social Media*/
+	.main-container { margin-top: 10px; }
+}
+
+/*Mobile Views*/
+@media screen and (max-width: 720px) {
+
+	/*Main Container*/
+	#container {
+		width: 351px !important;
+		padding: 0 4px !important; 
+	}
+	#container > div { width: 100% !important; }
+	#content { 
+		width: 351px !important;
+		margin: 0; padding: 0;
+	}
+	
+	/*Header*/
+	.banner { width: 351px; height: 136px !important; }
+	.banner img {
+		width: 70%; 
+		right: 0; bottom: 15px;
+	}	
+	#wrapper > header { height: 180px; }
+	
+	/*Main Navigation*/
+	#wrapper > header > footer > nav { width: 350px !important; }
+	#wrapper > header > footer > nav > a { display: none !important; }
+	.main { display: block !important; }
+	
+	/*Side Navigation*/
+	#side-nav { display: none !important; }
+	
+	/*Footer*/
+	#wrapper + footer,
+	#wrapper + footer div { width: 350px !important; }
+	#wrapper + footer div a {
+		width: 100px;
+		margin: 0 0 0 auto; padding: 10px 0 !important;
+		display: block !important;
+		text-align: right;
+	}
+	
+	/*Home Page*/
+	.home-page { width: 351px; margin: 0; }
+	.home-page div.header,
+	.home-page div.footer { width: 351px; height: auto; background: none !important; }
+	.home-page div.footer:last-of-type { margin: 0 0 20px 0; }
+	.home-page div.header a { margin: 0 0 5px 0; font-size: 25pt; }
+	.home-page div.header p,
+	.home-page div.footer p { width: auto !important; margin: 0; }
+	.home-page div.header a,
+	.home-page div.footer a { margin: 0; font-size: 25pt; }
+	
+	/*Recipes*/
+	div.recipes_lander { width: 353px !important; margin: 0 0 20px 0; }
+	.recipes_page { margin: 0 0 20px 0; }
+	.recipes_page h1 { font-size: 19pt !important; }
+	.recipes_page img { 
+		width: 50% !important;
+		margin: 0 0 10px; 
+	}
+	.recipes_page ul { padding: 0 !important; }
+	.recipes_page ul li {
+		color: #2E2E2E 
+		font-size: 14pt;
+		font-family: 'Arial', sans-serif;
+	}
+	.recipes_page ol li { font-size: 14pt; }
+	
+	/*Blog*/
+	div.blog_post { 
+		width: 353px !important;
+		padding: 10px 0 !important;
+	}
+	div.blog_preview img + p { width: 353px !important; }
+	
+	/*Checkout*/
+	#checkout { margin: 0 0 20px 0 !important; }
+	#checkout h1 { font-size: 18pt; }
+	#checkout h2 { font-size: 16px; }
+}
+
+/*----------------------
+
+Checkout
+
+----------------------*/
+
+#checkout { margin: 0 0 0 20px; }
+#checkout h1 {
+	margin: 3px 0 5px; 
+	color: #82B3F1; 
+	font-family: 'Muli', 'sans-serif'; 
+}
+#checkout h2 { font-family: 'Arial', 'sans-serif'; }
+#checkout h2 > a { 
+	color: #1054AA;
+	text-decoration: underline;
+}
+
+/*----------------------
+
+Interviews
+
+----------------------*/
+
+.chef-profile {
+	width: 100px;
+	margin: 10px 10px 10px 0;
+	display: inline-block;
+	vertical-align: top;
+}
+.chef-profile:hover h1 { color: #82B3F1; }
+.chef-profile h1 {
+	color: #1054AA;
+	font-family: 'Arial', 'sans-serif';
+	font-size: 15pt;
+	line-height: 17pt;
+}
+/*Interview Page*/
+.interview-page p:nth-of-type(odd) {
+	margin: 10px 0;
+	font-weight: bold;
+	font-family: 'Arial', 'sans-serif';
+}
+.interview-page h2 {
+	margin: 10px 0 15px;
+	color: #1054AA;
+	font-family: 'Muli', 'sans-serif';
+}
+
+/*----------------------
+
+Recipes
+
+----------------------*/
+
+div.recipes_lander {
+	width: 650px; height: 440px;
+	padding: 10px 0;
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,0))), url(/dynn/img/recipes/recipe-lander.png);
+	background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 16%,rgba(255,255,255,0.9) 50%,rgba(255,255,255,0) 100%), url(/dynn/img/recipes/recipe-lander.png);
+	background:    -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 16%, rgba(255,255,255,0.9) 50%, rgba(255,255,255,0) 100%), url(/dynn/img/recipes/recipe-lander.png);
+	background:     -ms-linear-gradient(left, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 16%,rgba(255,255,255,0.9) 50%,rgba(255,255,255,0) 100%), url(/dynn/img/recipes/recipe-lander.png);
+	background:      -o-linear-gradient(left, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 16%,rgba(255,255,255,0.9) 50%,rgba(255,255,255,0) 100%), url(/dynn/img/recipes/recipe-lander.png);
+	background:         linear-gradient(to right, rgba(255,255,255,1) 16%,rgba(255,255,255,0.9) 50%,rgba(255,255,255,0) 100%), url(/dynn/img/recipes/recipe-lander.png);
+	background: filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 ), url(/dynn/img/recipes/recipe-lander.png);
+} 
+
+ul.recipes > li {
+	color: #1054AA;
+	font-family: 'Muli', 'sans-serif';
+	font-size: 30pt;	
+}
+ul.recipes > ul a {
+	color: #353535;
+	font-size: 11pt;
+	font-style: italic;
+	-webkit-transition: color .5s;
+	   -moz-transition: color .5s;
+	       -transition: color .5s;
+}
+.recipes > ul > ul a:hover { color: #000; }
+
+/*Recipes Page*/
+
+.recipes_page h1 {
+	margin: 0 0 10px 0;
+	color: #82B3F1; 
+	font-family: 'Muli', 'sans-serif';
+}
+.recipes_page img { 
+	padding: 0 18px 0 0; 
+	border-right: 1px dashed;
+}
+.recipes_page ul {
+	padding: 0 0 0 10px;
+	display: inline-block; 
+	vertical-align: top; 
+}
+.recipes_page ul li { font-size: 12pt; }
+.recipes_page ul li > span {
+	color: #1054AA;
+	font-family: 'Muli', 'sans-serif';
+	font-weight: bold;
+}
+.recipes_page ol { 
+	margin: 10px 0 0 0; padding: 10px 0 0;
+	border-top: 1px dashed;
+}
+.recipes_page ol li { list-style-type: decimal; margin: 0 0 0 20px;}
+
+/*----------------------
+
+Shop
+
+----------------------*/
+
+.store-item {
+	width: 150px;
+	padding: 10px 10px 10px 0;
+	display: inline-block;
+}
+.store-item h1:hover { color: #5e5e5e; }  
+.store-item h1 {
+	color: #000; 
+	font-family: 'Arial', 'sans-serif';
+	font-size: 14pt;
+}
+.store-item h2 {
+	color: #5e5e5e; 
+	font-family: serif;
+	font-size: 11pt;
+	font-style: italic;	 
+}
+.store-item h3 {
+	color: #000; 
+	font-family: 'Arial', 'sans-serif';
+	font-size: 11pt; 
+}
+/*----------------------
+
+Footer
+
+----------------------*/
+
+#wrapper + footer {
+	width: 937px;
+	margin: 0 auto 30px;
+}
+#wrapper + footer div {
+	width: 687px;
+	margin: 0 0 0 auto;
+}
+#wrapper + footer div a {
+	padding: 20px 25px;
+	display: inline-block;
+	font-family: 'Arial', 'sans-serif';
+	color: rgba(255,255,255,1);
+}
+
+#wrapper + footer div a:hover { color: rgba(255,255,255,.7); }

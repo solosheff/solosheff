@@ -1,0 +1,204 @@
+/* Reset Styles */
+body,div,nav,h1,h2,h3,h4,h5,h6,ul,li,a { 
+	margin: 0; padding: 0; 
+}
+
+html,body { 
+	width: 100%; height: 100%;
+	background: #dbdbdb; }
+
+/* Contents */
+
+/*
+Contact Info
+Footer
+Main Container
+Main Navigation
+Web Design Container
+Web Design Navigation
+Social Media
+*/
+
+/*-------------------
+
+Main Container
+
+--------------------*/
+
+#main_Container { 
+	width: 100%;
+	margin: -94px 0 0 -50%; padding: 10px 0;
+	position: relative;
+	top: 50%; left: 50%;
+	background: rgba(187,67,0,1);
+}
+
+#content { width: 1120px; margin: 0 auto; }
+
+/*-------------------
+
+Main Navigation
+
+--------------------*/
+
+#content > nav {
+	width: 480px; height: 162px;
+	margin: 0 10px 0 0; padding: 0 10px 0 0;
+	position: relative;
+	display: inline-block;
+	position: relative;
+	vertical-align: top;
+	border-color: #fff;
+	border-style: solid;
+	border-width: 0 1px 0 0;
+}
+	#content > nav > a {
+		width: 85px;
+		margin: 0 0 0 auto;
+		display: block;
+		text-align: right;
+		color: #fff;
+		font-size: 14pt;
+		text-decoration: none;
+	}
+
+/*-------------------
+
+Web Design Container
+
+--------------------*/
+
+#websites { 
+	width: 924px; height: 450px;
+	position: relative;
+	display: none;
+	opacity: 0;
+	overflow: hidden; 
+}
+	#screenshots { 
+		width: 2801px; height: 455px; 
+		position: relative;
+		left: 0; 
+	}
+		#screenshots li { display: inline-block; }
+		#screenshots li.tablet { display: none; }
+
+/*-------------------
+
+Web Design Navigation
+
+--------------------*/
+
+.tabs {
+	width: 924px; height: 50px;
+	position: absolute;
+	bottom: 0;
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(187,67,0,1)), color-stop(100%,rgba(187,67,0,0)));
+	background: -webkit-linear-gradient(left,  rgba(187,67,0,1) 0%,rgba(187,67,0,0) 100%);
+	background:    -moz-linear-gradient(left,  rgba(187,67,0,1) 0%, rgba(187,67,0,0) 100%); 
+	background:     -ms-linear-gradient(left,  rgba(187,67,0,1) 0%,rgba(187,67,0,0) 100%); 
+	background:      -o-linear-gradient(left,  rgba(187,67,0,1) 0%,rgba(187,67,0,0) 100%); 
+	background:         linear-gradient(to right,  rgba(187,67,0,1) 0%,rgba(187,67,0,0) 100%); 
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bb4300', endColorstr='#00bb4300',GradientType=1 ); /* IE6-9 */
+
+}
+	.tabs div { 
+		width: 20px; height: 20px; 
+		margin: 17px 0 17px 16px;
+		display: inline-block; 
+		background: white; 
+	}
+	.tabs div:hover { opacity: .6; }
+
+/*-------------------
+
+Contact Info
+
+--------------------*/
+
+#contact_info { 
+	width: 250px; height: 169px; 
+	display: none;
+	opacity: 0;
+}
+#contact_info h1 { 
+	margin: -4px 0 0 0; 
+	color: #fff; 
+	font-family: Arial; 
+	font-size: 20pt; 
+}
+#contact_info h2 { color: #fff; }
+#contact_info a { 
+	color: #fff; 
+	font-size: 17pt; 
+	font-style: italic; 
+	text-decoration: none; 
+}
+#contact_info a:visited { color: #fff; }
+/*-------------------
+
+Footer
+
+--------------------*/
+
+footer { 
+	width: 924px; 
+	margin: 20px 0 0 195px;
+	position: absolute; 
+	display: none;
+}
+
+footer p { margin: 5px 0 0; position: absolute; color: #000; display: none; }
+
+/*-------------------
+
+Social Media
+
+--------------------*/
+
+nav.social_media {
+	width: 175px; height: 48px;
+	margin: 0 0 0 auto;
+	position: absolute;
+	right: 10px; bottom: 0;
+}
+
+nav.social_media a {
+	width: 48px; height: 48px;
+	margin: 0 0 0 7px;
+	display: inline-block;
+	background: url(../img/social_media.png);
+} 
+
+nav.social_media a.insta { background-position: 109px 0; }
+nav.social_media a.linked_in { background-position: 48px 0; }
+
+/*-------------------
+
+Media Queries
+
+--------------------*/
+
+/*Tablet View*/
+
+@media screen and (max-width : 1090px)  {
+
+	/*Main Container*/
+	#content { width: 710px; }
+	#content > nav { width: 300px; }
+
+	/*Web Design Container*/
+	#websites { width: 515px; }
+	#screenshots { width: 1553px; }
+	#screenshots li { display: none; }
+	#screenshots li.tablet { display: inline-block; }
+
+	/*Footer*/
+	footer { width: 516px; }
+}
+
+/*Mobile View*/
+
+@media screen and (max-width : 568px) {
+
+}
